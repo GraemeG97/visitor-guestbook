@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js" defer></script>
+    <title>Graeme's Visitor Guestbook</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Leave New Guests a Message</h1>
+      <form id="theForm">
+        <label for="guestName" id="guestName">Guest Name</label>
+        <input type="text" name="guestName" placeholder="Your name" required />
+        <label for="roomNumb"> Room Number: </label>
+        <input type="text" id="roomNumb" name="roomNumb" required />
+        <label for="content">Your message</label>
+        <textarea
+          name="content"
+          id="content"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+    <div id="message-container"></div>
+  </body>
+</html>
